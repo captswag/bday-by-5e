@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">B\'DAY BY 5E</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="about">About</string>
+    
+    <string-array name = "names">
+        <item>Abin John</item>
+        <item>Akhil P Mathew</item>
+        <item>Akhilraj VC</item>
+        <item>Albert George</item>
+        <item>Amal Sebastian</item>
+        <item>Anjith Sasindran</item>
+        <item>Arjun M</item>
+        <item>Aswin Vijayan</item>
+        <item>Don Jose</item>
+        <item>Febin Sebastian</item>
+        <item>Gem George</item>
+        <item>Haris KK</item>
+        <item>Jerin Joshy</item>
+        <item>Joshwa Philip</item>
+        <item>Manu K Narayanan</item>j
+        <item>Mubashir K P</item>
+        <item>Muhammed Fayaz</item>
+        <item>Rithin V</item>
+        <item>Shobin Suresh</item>
+        <item>Vineeth Vinod</item>
+        <item>Ambili Nambiar</item>
+        <item>Amrutha MP</item>
+        <item>Anjana V</item>
+        <item>Anju Cherian</item>
+        <item>Anjumol Joseph</item>
+        <item>Anusree RM</item>
+        <item>Aparna Krishnan</item>
+        <item>Archana M</item>
+        <item>Aswathi George</item>
+        <item>Athira Surendran</item>
+        <item>Dilna TV</item>
+        <item>Jaisy Babu</item>
+        <item>Jesty Thomas K</item>
+        <item>Jinu Johny</item>
+        <item>Josna Baby</item>
+        <item>Kavya K</item>
+        <item>Kavya Krishnan</item>
+        <item>Lidiya Jose</item>
+        <item>Minu Mohan</item>
+        <item>Murshida MP</item>
+        <item>Nafitha Mohammed</item>
+        <item>Nayana K</item>
+        <item>Ninju Kurian</item>
+        <item>Nishma Premnath</item>
+        <item>Nivya Johnson</item>
+        <item>Ramya Rajan</item>
+        <item>Resila Kunnummal</item>
+        <item>Riya Benny</item>
+        <item>Salu Thomas</item>
+        <item>Seethu Sadanandan</item>
+        <item>Shifna Kadeeja</item>
+        <item>Smilty Chacko</item>
+        <item>Swathi Chandran N</item>
+        <item>Swati RK</item>
+        <item>Ujwala Vijayan</item>
+        <item>Vandana KV</item>
+        <item>Vishnupriya J</item>
+        <item>Amrutha NV</item>
+    </string-array>
+
+</resources>
