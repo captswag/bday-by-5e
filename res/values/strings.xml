@@ -31,6 +31,7 @@
         <item>Vineeth Vinod</item>
         <item>Ambili Nambiar</item>
         <item>Amrutha MP</item>
+        <item>Amrutha NV</item>
         <item>Anjana V</item>
         <item>Anju Cherian</item>
         <item>Anjumol Joseph</item>
@@ -66,7 +67,69 @@
         <item>Ujwala Vijayan</item>
         <item>Vandana KV</item>
         <item>Vishnupriya J</item>
-        <item>Amrutha NV</item>
+        <item>Athul Santhosh</item>
+    </string-array>
+    
+    <string-array name = "bday">
+        <item>28 0 1993</item>
+        <item>30 3 1993</item>
+        <item>17 7 1994</item>
+        <item>18 5 1993</item>
+        <item>19 11 1993</item>
+        <item>28 7 1993</item>
+        <item>25 4 1994</item>
+        <item>11 2 1993</item>
+        <item>15 2 1993</item>
+        <item>20 8 1993</item>
+        <item>4 10 1993</item>
+        <item>26 2 1993</item>
+        <item>11 11 1992</item>
+        <item>10 11 1992</item>
+        <item>16 5 1993</item>
+        <item>28 6 1993</item>
+        <item>21 8 1993</item>
+        <item>25 7 1993</item>
+        <item>26 2 1993</item>
+        <item>5 2 1993</item>
+        <item>3 10 1993</item>
+        <item>28 4 1993</item>
+        <item>13 2 1994</item>
+        <item>15 6 1993</item>
+        <item>7 3 1994</item>
+        <item>16 6 1993</item>
+        <item>25 2 1993</item>
+        <item>24 1 1993</item>
+        <item>3 10 1993</item>
+        <item>30 0 1993</item>
+        <item>6 4 1993</item>
+        <item>26 3 1994</item>
+        <item>29 4 1994</item>
+        <item>12 1 1994</item>
+        <item>22 10 1993</item>
+        <item>19 0 1994</item>
+        <item>28 10 1992</item>
+        <item>31 7 1992</item>
+        <item>13 7 1993</item>
+        <item>15 6 1993</item>
+        <item>11 1 1994</item>
+        <item>7 3 1993</item>
+        <item>2 4 1994</item>
+        <item>4 2 1994</item>
+        <item>1 1 1994</item>
+        <item>30 0 1993</item>
+        <item>22 6 1993</item>
+        <item>28 5 1993</item>
+        <item>28 6 1993</item>
+        <item>31 9 1994</item>
+        <item>17 8 1993</item>
+        <item>15 11 1992</item>
+        <item>25 11 1993</item>
+        <item>27 3 1994</item>
+        <item>25 9 1993</item>
+        <item>27 2 1993</item>
+        <item>11 10 1993</item>
+        <item>28 0 1994</item>
+        <item>23 1 1992</item>
     </string-array>
 
 </resources>
