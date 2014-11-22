@@ -1,11 +1,11 @@
 package com.anjith.bdayby5e;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,7 +14,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.SearchView.OnQueryTextListener;
 import android.widget.Toast;
 
 
@@ -108,7 +107,7 @@ public class MainActivity extends ListActivity {
     	case R.id.upcoming: Toast.makeText(this, R.string.upcoming, Toast.LENGTH_SHORT).show();
     		break;
     		
-    	case R.id.about: Toast.makeText(this, R.string.about, Toast.LENGTH_SHORT).show();
+    	case R.id.about: startActivity(new Intent(this, AboutActivity.class));
     		break;
     		
     	}

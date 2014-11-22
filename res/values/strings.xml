@@ -131,5 +131,9 @@
         <item>28 0 1994</item>
         <item>23 1 1992</item>
     </string-array>
+        <string name="anjith_sasindran">Anjith Sasindran</string>
+        <string name="about_me">ABOUT ME</string>
+        <string name="details">Hi there, I am Anjith Sasindran.\nCurrently doing my B-Tech in Computer Science from Vimal Jyothi Engineering College. I am an Android Developer who loves Java, and I also design Websites using HTML/CSS &amp; Bootstrap.</string>
+        <string name="appyear">B\'DAY BY 5E - 2014</string>
 
 </resources>
