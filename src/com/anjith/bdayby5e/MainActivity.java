@@ -4,7 +4,9 @@ import android.app.ListActivity;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,6 +28,7 @@ public class MainActivity extends ListActivity {
 	String bdays[];
 	
 	ListView listView;
+	ArrayAdapter<String> adapter;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +41,11 @@ public class MainActivity extends ListActivity {
         names = resources.getStringArray(R.array.names);
         bdays = resources.getStringArray(R.array.bday);
         
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
         	
         setListAdapter(adapter);
         
         listView = getListView();
-        listView.setTextFilterEnabled(true);
     }
 
 
@@ -70,25 +72,27 @@ public class MainActivity extends ListActivity {
         EditText searchEdit = (EditText) searchView.findViewById(searchViewId);
         searchEdit.setBackgroundResource(R.drawable.bdaysearc_edit_text_holo_light);
         
-        searchView.setOnQueryTextListener(new OnQueryTextListener() {
+        searchEdit.addTextChangedListener(new TextWatcher() {
 			
 			@Override
-			public boolean onQueryTextSubmit(String arg0) {
+			public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
 				// TODO Auto-generated method stub
-				return false;
+				adapter.getFilter().filter(arg0.toString());
 			}
 			
 			@Override
-			public boolean onQueryTextChange(String arg0) {
+			public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+					int arg3) {
 				// TODO Auto-generated method stub
-				if (TextUtils.isEmpty(arg0)) {
-					listView.clearTextFilter();
-				} else {
-					listView.setFilterText(arg0.toString());
-				}
-				return true; //of onQueryTextChange(String arg0)
+				
 			}
-		});
+			
+			@Override
+			public void afterTextChanged(Editable arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		}); //End of onTextChangedListener();
         
         return true; //of onCreateOptionsMenu()
     }
