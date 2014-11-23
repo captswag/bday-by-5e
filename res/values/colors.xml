@@ -2,4 +2,6 @@
 <resources>
 	<color name="bdaysearc_color">#ffffff</color> 
 	<color name="black">#000000</color> 
+	<color name="transparent">#80000000</color>
+	<color name="background">#f6f6f6</color>
 </resources>

@@ -15,8 +15,10 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int background=0x7f040003;
         public static final int bdaysearc_color=0x7f040000;
         public static final int black=0x7f040001;
+        public static final int transparent=0x7f040002;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -36,43 +38,44 @@ public final class R {
         public static final int ab_stacked_solid_bdayaction=0x7f020003;
         public static final int ab_texture_tile_bdayaction=0x7f020004;
         public static final int ab_transparent_bdayaction=0x7f020005;
-        public static final int bdaysearc_edit_text_holo_light=0x7f020006;
-        public static final int bdaysearc_textfield_activated_holo_light=0x7f020007;
-        public static final int bdaysearc_textfield_default_holo_light=0x7f020008;
-        public static final int bdaysearc_textfield_disabled_focused_holo_light=0x7f020009;
-        public static final int bdaysearc_textfield_disabled_holo_light=0x7f02000a;
-        public static final int bdaysearc_textfield_focused_holo_light=0x7f02000b;
-        public static final int btn_cab_done_bdayaction=0x7f02000c;
-        public static final int btn_cab_done_default_bdayaction=0x7f02000d;
-        public static final int btn_cab_done_focused_bdayaction=0x7f02000e;
-        public static final int btn_cab_done_pressed_bdayaction=0x7f02000f;
-        public static final int cab_background_bottom_bdayaction=0x7f020010;
-        public static final int cab_background_top_bdayaction=0x7f020011;
-        public static final int ic_action_collapse=0x7f020012;
-        public static final int ic_action_person=0x7f020013;
-        public static final int ic_action_search=0x7f020014;
-        public static final int ic_icon=0x7f020015;
-        public static final int ic_launcher=0x7f020016;
-        public static final int list_focused_bdayaction=0x7f020017;
-        public static final int list_pressed_bdayaction=0x7f020018;
-        public static final int menu_dropdown_panel_bdayaction=0x7f020019;
-        public static final int progress_bg_bdayaction=0x7f02001a;
-        public static final int progress_horizontal_bdayaction=0x7f02001b;
-        public static final int progress_primary_bdayaction=0x7f02001c;
-        public static final int progress_secondary_bdayaction=0x7f02001d;
-        public static final int selectable_background_bdayaction=0x7f02001e;
-        public static final int spinner_ab_default_bdayaction=0x7f02001f;
-        public static final int spinner_ab_disabled_bdayaction=0x7f020020;
-        public static final int spinner_ab_focused_bdayaction=0x7f020021;
-        public static final int spinner_ab_pressed_bdayaction=0x7f020022;
-        public static final int spinner_background_ab_bdayaction=0x7f020023;
-        public static final int tab_indicator_ab_bdayaction=0x7f020024;
-        public static final int tab_selected_bdayaction=0x7f020025;
-        public static final int tab_selected_focused_bdayaction=0x7f020026;
-        public static final int tab_selected_pressed_bdayaction=0x7f020027;
-        public static final int tab_unselected_bdayaction=0x7f020028;
-        public static final int tab_unselected_focused_bdayaction=0x7f020029;
-        public static final int tab_unselected_pressed_bdayaction=0x7f02002a;
+        public static final int arrow_up=0x7f020006;
+        public static final int bdaysearc_edit_text_holo_light=0x7f020007;
+        public static final int bdaysearc_textfield_activated_holo_light=0x7f020008;
+        public static final int bdaysearc_textfield_default_holo_light=0x7f020009;
+        public static final int bdaysearc_textfield_disabled_focused_holo_light=0x7f02000a;
+        public static final int bdaysearc_textfield_disabled_holo_light=0x7f02000b;
+        public static final int bdaysearc_textfield_focused_holo_light=0x7f02000c;
+        public static final int btn_cab_done_bdayaction=0x7f02000d;
+        public static final int btn_cab_done_default_bdayaction=0x7f02000e;
+        public static final int btn_cab_done_focused_bdayaction=0x7f02000f;
+        public static final int btn_cab_done_pressed_bdayaction=0x7f020010;
+        public static final int cab_background_bottom_bdayaction=0x7f020011;
+        public static final int cab_background_top_bdayaction=0x7f020012;
+        public static final int ic_action_collapse=0x7f020013;
+        public static final int ic_action_person=0x7f020014;
+        public static final int ic_action_search=0x7f020015;
+        public static final int ic_icon=0x7f020016;
+        public static final int ic_launcher=0x7f020017;
+        public static final int list_focused_bdayaction=0x7f020018;
+        public static final int list_pressed_bdayaction=0x7f020019;
+        public static final int menu_dropdown_panel_bdayaction=0x7f02001a;
+        public static final int progress_bg_bdayaction=0x7f02001b;
+        public static final int progress_horizontal_bdayaction=0x7f02001c;
+        public static final int progress_primary_bdayaction=0x7f02001d;
+        public static final int progress_secondary_bdayaction=0x7f02001e;
+        public static final int selectable_background_bdayaction=0x7f02001f;
+        public static final int spinner_ab_default_bdayaction=0x7f020020;
+        public static final int spinner_ab_disabled_bdayaction=0x7f020021;
+        public static final int spinner_ab_focused_bdayaction=0x7f020022;
+        public static final int spinner_ab_pressed_bdayaction=0x7f020023;
+        public static final int spinner_background_ab_bdayaction=0x7f020024;
+        public static final int tab_indicator_ab_bdayaction=0x7f020025;
+        public static final int tab_selected_bdayaction=0x7f020026;
+        public static final int tab_selected_focused_bdayaction=0x7f020027;
+        public static final int tab_selected_pressed_bdayaction=0x7f020028;
+        public static final int tab_unselected_bdayaction=0x7f020029;
+        public static final int tab_unselected_focused_bdayaction=0x7f02002a;
+        public static final int tab_unselected_pressed_bdayaction=0x7f02002b;
     }
     public static final class id {
         public static final int about=0x7f0a0002;
