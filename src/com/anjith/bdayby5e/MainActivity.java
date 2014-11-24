@@ -14,7 +14,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 
 public class MainActivity extends ListActivity {
@@ -104,7 +103,7 @@ public class MainActivity extends ListActivity {
     	
     	switch(item.getItemId()) {
     	
-    	case R.id.upcoming: Toast.makeText(this, R.string.upcoming, Toast.LENGTH_SHORT).show();
+    	case R.id.upcoming: startActivity(new Intent(this, UpcomingActivity.class));
     		break;
     		
     	case R.id.about: startActivity(new Intent(this, AboutActivity.class));

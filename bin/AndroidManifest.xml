@@ -30,6 +30,13 @@
             android:parentActivityName="com.anjith.bdayby5e.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
+        
+        <activity 
+            android:name=".UpcomingActivity"
+            android:label="@string/upcoming"
+            android:parentActivityName="com.anjith.bdayby5e.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
