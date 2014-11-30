@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listnumber"
+        android:layout_weight="0.87"
+        android:gravity="center"
+        android:background="@color/actionbarcolor"
+        android:textColor="@color/background"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listvalues"
+        android:layout_weight="0.13"
+        android:paddingLeft="8dp"
+    	android:paddingTop="8dp"
+	    android:paddingBottom="8dp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+    
+
+</LinearLayout>

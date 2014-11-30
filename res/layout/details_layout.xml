@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/personname"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+    
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/personbday"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personnext"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personnextday"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personfact"/>
+    
+
+</LinearLayout>

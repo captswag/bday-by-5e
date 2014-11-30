@@ -15,6 +15,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int actionbarcolor=0x7f040004;
         public static final int background=0x7f040003;
         public static final int bdaysearc_color=0x7f040000;
         public static final int black=0x7f040001;
@@ -79,17 +80,26 @@ public final class R {
         public static final int tab_unselected_pressed_bdayaction=0x7f02002c;
     }
     public static final class id {
-        public static final int about=0x7f0a0004;
-        public static final int row1=0x7f0a0000;
-        public static final int row2=0x7f0a0001;
-        public static final int search=0x7f0a0002;
-        public static final int upcoming=0x7f0a0003;
+        public static final int about=0x7f0a000b;
+        public static final int listnumber=0x7f0a0000;
+        public static final int listvalues=0x7f0a0001;
+        public static final int personbday=0x7f0a0003;
+        public static final int personfact=0x7f0a0006;
+        public static final int personname=0x7f0a0002;
+        public static final int personnext=0x7f0a0004;
+        public static final int personnextday=0x7f0a0005;
+        public static final int row1=0x7f0a0007;
+        public static final int row2=0x7f0a0008;
+        public static final int search=0x7f0a0009;
+        public static final int upcoming=0x7f0a000a;
     }
     public static final class layout {
         public static final int aboutactivity=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int listview_layout=0x7f030002;
-        public static final int upcoming=0x7f030003;
+        public static final int activity_main_custom=0x7f030002;
+        public static final int details_layout=0x7f030003;
+        public static final int listview_layout=0x7f030004;
+        public static final int upcoming=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f090000;

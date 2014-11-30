@@ -37,6 +37,12 @@
             android:parentActivityName="com.anjith.bdayby5e.MainActivity"
             android:screenOrientation="portrait">
         </activity>
+        
+        <activity
+            android:name=".Details"
+            android:parentActivityName="com.anjith.bdayby5e.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

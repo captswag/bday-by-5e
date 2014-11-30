@@ -9,6 +9,7 @@
     <string name="about">About</string>
     
     <string-array name = "names">
+        
         <item>Abin John</item>
         <item>Akhil P Mathew</item>
         <item>Akhilraj VC</item>
@@ -68,9 +69,11 @@
         <item>Vandana KV</item>
         <item>Vishnupriya J</item>
         <item>Athul Santhosh</item>
+        
     </string-array>
     
     <string-array name = "bday">
+        
         <item>28 0 1993</item>
         <item>30 3 1993</item>
         <item>17 7 1994</item>
@@ -130,7 +133,9 @@
         <item>11 10 1993</item>
         <item>28 0 1994</item>
         <item>23 1 1992</item>
+        
     </string-array>
+    
         <string name="anjith_sasindran">Anjith Sasindran</string>
         <string name="about_me">ABOUT ME</string>
         <string name="details">Hi there, I am Anjith Sasindran.\nCurrently doing my B-Tech in Computer Science from Vimal Jyothi Engineering College. I am an Android Developer who loves Java, and I also design Websites using HTML/CSS &amp; Bootstrap.</string>

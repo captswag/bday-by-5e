@@ -1,5 +1,7 @@
 package com.anjith.bdayby5e;
 
+import java.util.ArrayList;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -10,10 +12,10 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 
 public class MainActivity extends ListActivity {
@@ -26,7 +28,8 @@ public class MainActivity extends ListActivity {
 	String bdays[];
 	
 	ListView listView;
-	ArrayAdapter<String> adapter;
+	ArrayList<ArrayList<String>> list;
+	ListAdapter customAdapter;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +42,29 @@ public class MainActivity extends ListActivity {
         names = resources.getStringArray(R.array.names);
         bdays = resources.getStringArray(R.array.bday);
         
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
-        	
-        setListAdapter(adapter);
+        list = new ArrayList<ArrayList<String>>();
+        ArrayList<String> temp;
         
+        for (int i = 0 ; i < names.length; i++) {
+        	
+        	temp = new ArrayList<String>();
+        	
+        	if (i>=8) { //Number 9 left college, so incrementing the value by 1 
+        		temp.add((i+2)+"");
+        		temp.add(names[i]);        		
+        	}
+        	else {
+            	temp.add((i+1)+"");
+            	temp.add(names[i]);
+        	}
+        	
+        	list.add(temp);
+        }
         listView = getListView();
+        customAdapter = new ListAdapter(this, R.layout.activity_main_custom, list);
+        
+        listView.setAdapter(customAdapter);
+        
     }
 
 
@@ -75,7 +96,7 @@ public class MainActivity extends ListActivity {
 			@Override
 			public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
 				// TODO Auto-generated method stub
-				adapter.getFilter().filter(arg0.toString());
+				customAdapter.getFilter().filter(arg0.toString());
 			}
 			
 			@Override
@@ -94,8 +115,20 @@ public class MainActivity extends ListActivity {
         
         return true; //of onCreateOptionsMenu()
     }
+    
+    
 
     @Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		// TODO Auto-generated method stub
+		Intent detailsIntent = new Intent(this, Details.class);
+		TextView temp = (TextView)v.findViewById(R.id.listvalues);
+		detailsIntent.putExtra("name", temp.getText());
+		startActivity(detailsIntent);
+	}
+
+
+	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long

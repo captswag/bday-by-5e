@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 public class UpcomingActivity extends ListActivity{
-	
+
 	String names[];
 	String bdays[];
 	
@@ -40,6 +43,14 @@ public class UpcomingActivity extends ListActivity{
 		adapter = new SimpleAdapter(this, list, R.layout.listview_layout, new String[] {"bday", "name"}, new int[] {R.id.row1, R.id.row2});
 		setListAdapter(adapter);
 		
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		// TODO Auto-generated method stub
+		Intent detailsIntent = new Intent(this, Details.class);
+		detailsIntent.putExtra("name", list.get(position).get("name"));
+		startActivity(detailsIntent);
 	}
 
 	@Override

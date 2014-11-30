@@ -4,4 +4,5 @@
 	<color name="black">#000000</color> 
 	<color name="transparent">#80000000</color>
 	<color name="background">#f6f6f6</color>
+	<color name="actionbarcolor">#322c35</color>
 </resources>
