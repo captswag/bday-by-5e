@@ -80,18 +80,22 @@ public final class R {
         public static final int tab_unselected_pressed_bdayaction=0x7f02002c;
     }
     public static final class id {
-        public static final int about=0x7f0a000b;
+        public static final int about=0x7f0a000f;
         public static final int listnumber=0x7f0a0000;
         public static final int listvalues=0x7f0a0001;
+        public static final int personage=0x7f0a0006;
         public static final int personbday=0x7f0a0003;
-        public static final int personfact=0x7f0a0006;
+        public static final int personday=0x7f0a0004;
+        public static final int persondaysold=0x7f0a0008;
+        public static final int personhour=0x7f0a0009;
         public static final int personname=0x7f0a0002;
-        public static final int personnext=0x7f0a0004;
-        public static final int personnextday=0x7f0a0005;
-        public static final int row1=0x7f0a0007;
-        public static final int row2=0x7f0a0008;
-        public static final int search=0x7f0a0009;
-        public static final int upcoming=0x7f0a000a;
+        public static final int personnextdays=0x7f0a0007;
+        public static final int personseconds=0x7f0a000a;
+        public static final int personstarsign=0x7f0a0005;
+        public static final int row1=0x7f0a000b;
+        public static final int row2=0x7f0a000c;
+        public static final int search=0x7f0a000d;
+        public static final int upcoming=0x7f0a000e;
     }
     public static final class layout {
         public static final int aboutactivity=0x7f030000;

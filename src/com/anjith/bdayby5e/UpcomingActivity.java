@@ -49,7 +49,17 @@ public class UpcomingActivity extends ListActivity{
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		Intent detailsIntent = new Intent(this, Details.class);
-		detailsIntent.putExtra("name", list.get(position).get("name"));
+		String name = list.get(position).get("name");
+		detailsIntent.putExtra("name", name);
+		
+		//To check for bday of person according to name
+		for (int i = 0 ; i < names.length ; i ++ ) {
+			if (names[i].equals(name)) {
+				detailsIntent.putExtra("bday", bdays[i]);
+				break;
+			}
+		}
+		
 		startActivity(detailsIntent);
 	}
 

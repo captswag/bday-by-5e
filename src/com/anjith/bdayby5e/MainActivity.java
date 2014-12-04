@@ -123,7 +123,17 @@ public class MainActivity extends ListActivity {
 		// TODO Auto-generated method stub
 		Intent detailsIntent = new Intent(this, Details.class);
 		TextView temp = (TextView)v.findViewById(R.id.listvalues);
-		detailsIntent.putExtra("name", temp.getText());
+		String name = temp.getText().toString(); //Getting the name from the listview itself
+		detailsIntent.putExtra("name", name);
+		
+		//To check for bday of person according to name
+		for (int i = 0 ; i < names.length ; i ++ ) {
+			if (names[i].equals(name)) {
+				detailsIntent.putExtra("bday", bdays[i]);
+				break;
+			}
+		}
+		
 		startActivity(detailsIntent);
 	}
 
