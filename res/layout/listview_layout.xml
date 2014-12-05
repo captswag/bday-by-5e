@@ -12,7 +12,8 @@
         android:layout_width="fill_parent"
         android:id="@+id/row1"
         android:textAllCaps="true"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-condensed" />
     
 	<TextView 
         android:layout_width="fill_parent"
