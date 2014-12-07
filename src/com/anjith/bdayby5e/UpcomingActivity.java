@@ -8,7 +8,6 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
@@ -108,7 +107,6 @@ public class UpcomingActivity extends ListActivity{
 			}
 			
 			times[i] = (int)((bday[i].getTime() / 1000L - todayWithoutRest.getTime() / 1000L) / 86400L);
-			Log.d(names[i], times[i]+"");
 		}
 		
 		for (i = 0; i < names.length; i++) {

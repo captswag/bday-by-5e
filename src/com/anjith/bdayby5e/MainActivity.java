@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -76,6 +77,7 @@ public class MainActivity extends ListActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         
         searchView = (SearchView)menu.findItem(R.id.search).getActionView();
+        searchView.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_WORDS); //To capitalize the first alphabet in name
         
         //Get the SearchPlate id
         int searchPlateId = searchView.getContext().getResources().getIdentifier("android:id/search_plate", null, null);

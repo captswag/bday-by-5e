@@ -18,11 +18,14 @@ public class ListAdapter extends ArrayAdapter<ArrayList<String>>{
 	Context context;
 	Filter filter;
 	List<ArrayList<String>> originalList;
+	List<ArrayList<String>> filterList;
+	List<ArrayList<String>> duplicate;
 	
 	public ListAdapter(Context context, int resource, List<ArrayList<String>> objects) {
 		super(context, resource, objects);
 		this.context = context;
-		this.originalList = objects;		
+		this.originalList = objects;
+		this.duplicate = objects;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -82,19 +85,25 @@ public class ListAdapter extends ArrayAdapter<ArrayList<String>>{
 			FilterResults result = new FilterResults();
 			
 			if (constraint == null || constraint.length() == 0) {
-				result.values = originalList;
-				result.count = originalList.size();
+				result.values = duplicate;
+				result.count = duplicate.size();
 			}
 			else {
-				List<ArrayList<String>> filterList = new ArrayList<ArrayList<String>>();
-				
-				for (ArrayList<String> duplicateFilter : originalList) {
+				filterList = new ArrayList<ArrayList<String>>();
+				int temp = 0;
+				for (ArrayList<String> duplicateFilter : duplicate) {
+					
 					if (duplicateFilter.get(1).toUpperCase().startsWith(constraint.toString().toUpperCase())) {
 						filterList.add(duplicateFilter);
+						temp++;
 					}
 				}
-				result.values = filterList;
-				result.count = filterList.size();
+				
+				if (temp == 0)
+					filterList = new ArrayList<ArrayList<String>>();
+				
+					result.values = filterList;
+					result.count = filterList.size();
 			}
 			
 			return result;
@@ -105,13 +114,8 @@ public class ListAdapter extends ArrayAdapter<ArrayList<String>>{
 		protected void publishResults(CharSequence arg0, FilterResults results) {
 			// TODO Auto-generated method stub
 			
-			if (results.count == 0) {
-				notifyDataSetInvalidated();
-			}
-			else {
 				originalList = (List<ArrayList<String>>) results.values;
 				notifyDataSetChanged();
-			}
 			
 		}
 		
