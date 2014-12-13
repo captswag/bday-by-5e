@@ -97,6 +97,10 @@ public class Details extends Activity{
 	
 	@SuppressWarnings("deprecation")
 	public String getStarSign(Date realBday) {
+		
+		if (getIntent().getStringExtra("name").equals("Josna Baby"))
+			return "Capricorn";
+		
 		Date before, after;
 		int tempYear = realBday.getYear();
 		
@@ -155,7 +159,7 @@ public class Details extends Activity{
 			return "Sagittarius";
 		
 		after = new Date(tempYear, 11, 21);
-		before = new Date(tempYear, 0, 20);
+		before = new Date(tempYear+1, 0, 20);
 		
 		if (realBday.after(after)&&realBday.before(before))
 			return "Capricorn";
